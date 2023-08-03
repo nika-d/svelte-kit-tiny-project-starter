@@ -1,0 +1,31 @@
+@use '../../basics/shadows' as *;
+@use '../../basics/sizing';
+@use '../../basics/colors';
+
+.dropdown-item {
+	border-radius: sizing.$size_1;
+	padding: sizing.$size_4;
+	&:hover {
+		cursor: pointer;
+		background-color: colors.$blue_pantone_293_012;
+	}
+	display: block;
+	white-space: normal;
+}
+
+.dropdown-menu {
+	@extend .shadow;
+	border-radius: sizing.$border_radius_input;
+	border: 0;
+	display: block;
+	min-width: sizing.$dropdown-min-width;
+	max-width: sizing.$dropdown-max-width;
+	max-height: sizing.$dropdown-max-height;
+	overflow: scroll;
+}
+
+.dropdown-toggle {
+	&::after {
+		display: none;
+	}
+}

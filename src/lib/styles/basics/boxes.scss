@@ -1,0 +1,8 @@
+@use 'colors' as *;
+@use 'sizing';
+
+@mixin simple-border {
+	border-radius: sizing.$border_radius_input;
+	border: solid 1px $grey_pantone_430_050;
+	margin: sizing.$size_2;
+}

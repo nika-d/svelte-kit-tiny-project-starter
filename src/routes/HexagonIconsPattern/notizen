@@ -1,0 +1,34 @@
+
+Länge einer Kante des Sechsecks
+a = 1
+
+Größe des Icons
+gi = a/2
+
+größe des icons in symbol-koordinaten
+24
+x*24 = 1/2
+x = 1/48 = 0,02
+
+vertical spacing
+sv = 1,5 * a
+
+horizontal spacing
+sh = 2 * 0,866 * a = 1,732 * a
+
+anzahl vertical
+cv = 20
+
+anzahl horizontal
+ch = 74
+
+höhe der malfläche
+viewport height = sv * cv = 30
+
+breite der malfläche
+viewport width = sh * ch = 129
+
+init für xbefore - gerade zeile xbefore = 0, ungerade xbefore = sh/2
+x werte - x = xbefore + sh
+init für y werte, ybefore = 0
+y werte - y = ybefore + sv

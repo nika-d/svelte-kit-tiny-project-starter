@@ -1,0 +1,5 @@
+@use 'sizing';
+
+.shadow {
+	box-shadow: 0 sizing.$size_3 sizing.$size_4 rgba(0, 0, 0, 0.2);
+}

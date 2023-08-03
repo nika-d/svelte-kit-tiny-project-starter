@@ -1,0 +1,17 @@
+@use 'sizing';
+
+html {
+	font-size: sizing.$font_size_body_small;
+}
+
+$font-family-sans-serif:
+	Calibri,
+	Roboto,
+	system-ui,
+	-apple-system,
+	Arial,
+	sans-serif,
+	'Apple Color Emoji',
+	'Segoe UI Emoji';
+$font-weight-normal: 300;
+$font-weight-bold: 600;

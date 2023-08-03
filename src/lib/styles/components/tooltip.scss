@@ -1,0 +1,29 @@
+@use '../basics/colors';
+@use '../basics/sizing';
+@use '../basics/variables';
+
+@use '../../../../node_modules/svooltip/styles' with (
+	$bg: colors.$text_02_medium,
+	$text: colors.$white,
+	$roundness: sizing.$size_1,
+	$text-size: sizing.$font_size_caption,
+	$shadow: none
+);
+
+.svooltip {
+	z-index: variables.$z-index-high;
+	.svooltip-arrow {
+		border-radius: styles.$roundness;
+	}
+}
+
+.svooltip[data-placement='right'] {
+	--svooltip-roundness: 3px;
+	margin-left: -5px;
+
+	.svooltip-arrow {
+		--svooltip-arrow-size: 18px;
+		left: -8px !important;
+		transform: scale(1.2, 1) rotate(45deg);
+	}
+}

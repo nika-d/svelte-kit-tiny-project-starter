@@ -1,0 +1,11 @@
+@use '../../styles/basics/colors' as colors;
+
+$header-offset: 64px;
+$sidebar-collapsed-width: 64px;
+$sidebar-open-width: 250px;
+$collapse-transition-duration: 0.1s;
+$sidebar-border-width: 1px;
+$sidebar-active-border-width: 4px;
+$border-color: colors.$grey_pantone_430_050;
+$collapse-button-height: 31px;
+$collapse-button-width: 27px;

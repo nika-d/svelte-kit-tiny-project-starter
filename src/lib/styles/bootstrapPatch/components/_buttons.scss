@@ -1,0 +1,116 @@
+@use '../../basics/colors';
+@use '../../basics/sizing';
+@use '../../basics/animation';
+@use '../../basics/focusLessHighlighted' as *;
+
+.btn-link {
+	--bs-btn-focus-shadow-rgb: #{colors.$white};
+}
+
+.btn {
+	@extend .d-flex, .align-items-center, .justify-content-center;
+	min-height: 2 * sizing.$font_size_body;
+	min-width: 2 * sizing.$font_size_body;
+}
+
+.btn,
+.btn-primary {
+	--bs-btn-color: #{colors.$white};
+	--bs-btn-bg: #{colors.$blue_pantone_293_100};
+	--bs-btn-border-color: #{colors.$blue_pantone_293_100};
+	--bs-btn-hover-color: #{colors.$white};
+	--bs-btn-hover-bg: #{colors.$blue_pantone_293_070};
+	--bs-btn-hover-border-color: #{colors.$blue_pantone_293_070};
+	--bs-btn-focus-shadow-rgb: #{colors.$white};
+	--bs-btn-active-color: #{colors.$white};
+	--bs-btn-active-bg: #{colors.$blue_pantone_293_070};
+	--bs-btn-active-border-color: #{colors.$blue_pantone_293_070};
+	--bs-btn-active-shadow: #{colors.$white};
+	--bs-btn-disabled-color: #{colors.$white};
+	--bs-btn-disabled-bg: #{colors.$grey_pantone_430_100};
+	--bs-btn-disabled-border-color: #{colors.$grey_pantone_430_100};
+	--bs-btn-disabled-shadow: #{colors.$white};
+	--bs-btn-disabled-opacity: 1;
+
+	@include focusLessHighlighted;
+}
+
+.btn-outlined,
+.btn-secondary {
+	--bs-btn-color: #{colors.$text_01_high};
+	--bs-btn-bg: #{colors.$white};
+	--bs-btn-border-color: #{colors.$grey_pantone_430_050};
+	--bs-btn-hover-color: #{colors.$text_01_high};
+	--bs-btn-hover-bg: #{colors.$blue_pantone_293_012};
+	--bs-btn-hover-border-color: #{colors.$blue_pantone_293_012};
+	--bs-btn-focus-shadow-rgb: #{colors.$white};
+	--bs-btn-active-color: #{colors.$text_01_high};
+	--bs-btn-active-bg: #{colors.$blue_pantone_293_012};
+	--bs-btn-active-border-color: #{colors.$blue_pantone_293_012};
+	--bs-btn-active-shadow: #{colors.$white};
+	--bs-btn-disabled-color: #{colors.$grey_pantone_430_100};
+	--bs-btn-disabled-bg: #{colors.$white};
+	--bs-btn-disabled-border-color: #{colors.$grey_pantone_430_050};
+	--bs-btn-disabled-shadow: #{colors.$white};
+}
+
+.btn-ghost {
+	--bs-btn-color: #{colors.$blue_pantone_293_100};
+	--bs-btn-bg: #{colors.$white};
+	--bs-btn-border-color: #{colors.$white};
+	--bs-btn-hover-color: #{colors.$blue_pantone_293_100};
+	--bs-btn-hover-bg: #{colors.$blue_pantone_293_012};
+	--bs-btn-hover-border-color: #{colors.$blue_pantone_293_012};
+	--bs-btn-focus-shadow-rgb: #{colors.$white};
+	--bs-btn-active-color: #{colors.$blue_pantone_293_100};
+	--bs-btn-active-bg: #{colors.$blue_pantone_293_012};
+	--bs-btn-active-border-color: #{colors.$blue_pantone_293_012};
+	--bs-btn-active-shadow: #{colors.$white};
+	--bs-btn-disabled-color: #{colors.$grey_pantone_430_100};
+	--bs-btn-disabled-bg: #{colors.$white};
+	--bs-btn-disabled-border-color: #{colors.$white};
+	--bs-btn-disabled-shadow: #{colors.$white};
+}
+
+.btn-embedded {
+	--bs-btn-color: inherit;
+	--bs-btn-bg: transparent;
+	--bs-btn-border-color: transparent;
+	--bs-btn-hover-color: inherit;
+	--bs-btn-hover-bg: transparent;
+	--bs-btn-hover-border-color: transparent;
+	--bs-btn-focus-shadow-rgb: transparent;
+	--bs-btn-active-color: inherit;
+	--bs-btn-active-bg: transparent;
+	--bs-btn-active-border-color: transparent;
+	--bs-btn-active-shadow: transparent;
+	--bs-btn-disabled-color: #{colors.$grey_pantone_430_100};
+	--bs-btn-disabled-bg: transparent;
+	--bs-btn-disabled-border-color: transparent;
+	--bs-btn-disabled-shadow: transparent;
+}
+
+.btn-xs {
+	min-height: sizing.$compact_active_element_height;
+	min-width: sizing.$compact_active_element_height;
+	padding: 0;
+	line-height: normal !important;
+}
+
+.btn-toggled {
+	--bs-btn-color: #{colors.$grey_pantone_430_100};
+	--bs-btn-bg: #{colors.$grey_pantone_430_009};
+	--bs-btn-border-color: #{colors.$grey_pantone_430_100};
+	--bs-btn-hover-color: #{colors.$blue_pantone_293_100};
+	--bs-btn-hover-bg: #{colors.$blue_pantone_293_012};
+	--bs-btn-hover-border-color: #{colors.$blue_pantone_293_100};
+	--bs-btn-focus-shadow-rgb: #{colors.$white};
+	--bs-btn-active-color: #{colors.$blue_pantone_293_100};
+	--bs-btn-active-bg: #{colors.$blue_pantone_293_012};
+	--bs-btn-active-border-color: #{colors.$blue_pantone_293_100};
+	--bs-btn-active-shadow: #{colors.$white};
+	--bs-btn-disabled-color: #{colors.$white};
+	--bs-btn-disabled-bg: #{colors.$grey_pantone_430_050};
+	--bs-btn-disabled-border-color: #{colors.$grey_pantone_430_050};
+	--bs-btn-disabled-shadow: #{colors.$white};
+}
